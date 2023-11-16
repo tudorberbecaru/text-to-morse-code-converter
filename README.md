@@ -19,7 +19,7 @@ This Python script provides a simple text-based interface for encoding and decod
 - Python 3.x
 - Bidict 0.22.1
 
-Install the required library:
+Install the required libraries:
 
    ```bash
    pip install -r requirements.txt
