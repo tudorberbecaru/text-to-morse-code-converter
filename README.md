@@ -1,13 +1,47 @@
-# text-to-morse-code-converter
-As a child, I was always fascinated by the mysterious world of Morse code and its use in communication. I often imagined building a Morse code encoder/decoder, and now, I've turned that childhood dream into reality.
+# Morse Code Encoder/Decoder
 
-This Python program allows you to easily convert text into Morse code and vice versa.
+This Python script provides a simple text-based interface for encoding and decoding Morse code. It allows users to convert regular text to Morse code and vice versa.
 
-### Features:
+## Usage
 
-**Text to Morse Code Encoding:** Input any text, and the program will translate it into Morse code. It handles letters, numbers, and common punctuation, making it practical for encoding various messages.<br />
-**Morse Code to Text Decoding:** Enter Morse code with '.' and '-' for encoding, using spaces between letters and slashes between words. The program decodes the Morse code into readable text.<br />
-**Error Handling:** The program gracefully handles invalid Morse code input and untranslatable characters.<br />
-**User-Friendly Interface:** A straightforward command-line interface ensures a user-friendly experience.<br />
+1. Run the script:
 
-Feel free to adjust and expand upon this program to suit your needs :)
+    ```bash
+    python main.py
+    ```
+
+2. Follow the on-screen prompts to choose between encoding and decoding. Input the required text or Morse code as prompted.
+
+3. View the result and choose whether to perform another action.
+
+## Requirements
+
+- Python 3.x
+- Bidict 0.22.1
+
+Install the required library:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## How it Works
+
+The Morse code dictionary includes mappings for uppercase letters, numbers (0-9), and some common punctuation marks. I used a bidirectional dictionary (from the bidict module) for efficient mapping between Morse code and characters. The bidirectional dictionary allows seamless conversion in both directions, making it an ideal choice for encoding and decoding operations.
+
+
+- **Encoding:** Converts regular text to Morse code using the provided dictionary.
+- **Decoding:** Converts Morse code back to regular text.
+
+```plaintext
+Use '.' and '-' for Morse code
+Use ' ' to separate letters
+Use '/' to separate words
+'#' denotes an untranslatable character
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
